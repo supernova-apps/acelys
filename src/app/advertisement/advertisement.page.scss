@@ -1,0 +1,58 @@
+ion-input {
+  border: 1px solid rgba(203, 210, 221, 1);
+  border-radius: 4px;
+}
+ion-select {
+  border: 1px solid rgba(203, 210, 221, 1);
+  border-radius: 4px;
+}
+
+ion-radio {
+  color: rgba(118, 43, 216, 1);
+  --color-checked: rgba(118, 43, 216, 1);
+}
+ion-textarea {
+  border: 1px solid rgba(203, 210, 221, 1);
+  border-radius: 4px;
+}
+ion-app {
+  background: #f1f2f6;
+}
+ion-card {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+ion-content {
+  --background: rgba(241, 242, 246, 1);
+  --padding-end: 1rem;
+  --padding-start: 1rem;
+  --padding-bottom: 0.5rem;
+  --padding-top: 0.5rem;
+}
+.btn-save {
+  --padding-top: 1rem;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-image: linear-gradient(
+    197deg,
+    rgba(118, 43, 216, 1) 0%,
+    rgba(164, 73, 218, 1) 33.33%,
+    rgba(210, 104, 220, 1) 1000%
+  ) !important;
+}
+
+.back {
+  font-size: 2rem;
+}
+
+.table_mode {
+  display: table !important;
+}
+
+.cell_mode  {
+  width: 10rem;
+  height: 10rem;
+}

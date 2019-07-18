@@ -1,0 +1,191 @@
+<ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-toolbar [ngClass]="{back:true}">
+          <ion-icon (click)="back()" name="arrow-back"></ion-icon>
+        </ion-toolbar>
+      </ion-col>
+      <ion-col>
+        <ion-toolbar>
+          <ion-title>
+            Advertisement
+          </ion-title>
+        </ion-toolbar>
+      </ion-col>
+      <ion-col>
+        <ion-toolbar>
+          <ion-title>
+            <!-- Settings -->
+          </ion-title>
+        </ion-toolbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <label>
+          Ad Type:
+        </label>
+      </ion-col>
+      <ion-col>
+        <ion-radio-group>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-radio value="Offer">
+                </ion-radio>
+                <ion-label>
+                  Offer
+                </ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-radio value="Request">
+                </ion-radio>
+                <ion-label>
+                  Request
+                </ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-radio-group>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>
+    Category:
+  </ion-label>
+  <ion-select placeholder="Select One">
+    <ion-select-option value="f">
+      Female
+    </ion-select-option>
+    <ion-select-option value="m">
+      Male
+    </ion-select-option>
+  </ion-select>
+  <ion-label>
+    Title:
+  </ion-label>
+  <ion-input>
+  </ion-input>
+  <ion-label>
+    Description:
+  </ion-label>
+  <ion-textarea>
+  </ion-textarea>
+  <ion-label>
+    Price:
+  </ion-label>
+  <ion-input>
+  </ion-input>
+  <ion-label>
+    Diffusion area:
+  </ion-label>
+  <ion-select placeholder="Select One">
+    <ion-select-option value="f">
+      Female
+    </ion-select-option>
+    <ion-select-option value="m">
+      Male
+    </ion-select-option>
+  </ion-select>
+  <ion-label>
+    Photos:
+  </ion-label>
+  <!-- FOTOS SCROLL -->
+  <ion-grid>
+    <ion-row>
+      <!-- COL FOTOS -->
+      <ion-col size="9" [ngClass]="table_mode" scrollX="true">
+        <ion-slides [options]="slideOpts">
+          <ion-slide>
+
+            <img src="../../assets/1.jpg">
+
+          </ion-slide>
+          <ion-slide>
+
+            <img src="../../assets/2.jpg">
+
+          </ion-slide>
+          <ion-slide>
+
+            <img src="../../assets/3.jpg">
+
+          </ion-slide>
+        </ion-slides>
+
+
+
+
+        <!-- <ion-grid>
+          <ion-row scrollX="true">
+            <ion-col>
+              <ion-card>
+
+                <ion-fab vertical="top" horizontal="end" edge slot="fixed">
+                  <ion-fab-button>
+                    <ion-icon name="close"></ion-icon>
+                  </ion-fab-button>
+                </ion-fab>
+                <img
+                  src="../../assets/1.jpg">
+              </ion-card>
+
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img
+                  src="../../assets/2.jpg">
+              </ion-card>
+
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img
+                  src="../../assets/3.jpg">
+              </ion-card>
+
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <img
+                  src="../../assets/4.jpg">
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid> -->
+      </ion-col>
+      <!-- COL BOTONES -->
+      <ion-col size="3">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-thumbnail>
+                <img src="../../assets/icon/image.png">
+              </ion-thumbnail>
+            </ion-col>
+            <ion-col>
+              <ion-thumbnail>
+                <img src="../../assets/icon/camera.png">
+              </ion-thumbnail>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <button (click)="save()" class="button
+    btn-save
+    button-full
+    button-positive">
+    SAVE
+  </button>
+</ion-content>
+<!-- <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"> -->
+<!-- <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"> -->

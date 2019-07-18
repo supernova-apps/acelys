@@ -1,0 +1,170 @@
+<ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-toolbar [ngClass]="{back:true}">
+          <ion-icon (click)="back()" name="arrow-back"></ion-icon>
+        </ion-toolbar>
+      </ion-col>
+      <ion-col size="6">
+        <ion-toolbar>
+          <ion-title>Incident</ion-title>
+        </ion-toolbar>
+      </ion-col>
+      <ion-col size="2">
+        <ion-toolbar [ngClass]="{icons:true}">
+          <ion-icon (click)="data()" name="person"></ion-icon>
+        </ion-toolbar>
+
+      </ion-col>
+      <ion-col size="2">
+        <ion-toolbar [ngClass]="{icons:true}">
+          <ion-icon (click)="add()" name="add"></ion-icon>
+        </ion-toolbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-thumbnail [ngClass]="{background_image:true}">
+    <button [ngClass]="{top_button:true}">Expired</button>
+    <img
+      src="../../assets/5.jpg">
+
+  </ion-thumbnail>
+  <ion-card [ngClass]="{top_mask:true}">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+          <ion-avatar>
+            <img src="../../assets/icon/people 1.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label>Bruce Banner</ion-label>
+        </ion-col>
+        <ion-col size="4">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-avatar>
+                  <img src="../../assets/icon/heart.png">
+                </ion-avatar>
+              </ion-col>
+              <ion-col size="6">
+                <ion-avatar>
+                  <img src="../../assets/icon/points.png">
+                </ion-avatar>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card [ngClass]="{bottom_mask:true}">
+      <ion-label>Declared</ion-label>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="3">
+            <ion-label [ngClass]="{rang:true}"> 105</ion-label> </ion-col>
+          <ion-col size="9">
+            <ion-title [ngClass]="{title:true}">Water leack at first floor</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="6"></ion-col>
+          <ion-col size="6"></ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-label>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam
+        explicabo a aliquam eveniet quam at ea suscipit sint consequatur,
+        obcaecati distinctio. Neque, nisi ratione tenetur quod vitae
+        reprehenderit sed!
+      </ion-label>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="thumbs-up"></ion-icon>
+            7 Likes
+          </ion-col>
+          <ion-col>
+            <ion-icon name="chatbubbles"></ion-icon>
+            2 Comments
+          </ion-col>
+          <ion-col>
+            <ion-icon name="paper"></ion-icon>
+            0 reports
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card [ngClass]="{messages:true}">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="2">
+            <ion-avatar>
+              <img src="../../assets/icon/people 1.png">
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="10">
+            <ion-card [ngClass]="{messages_box:true}">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              numquam
+              explicabo a aliquam eveniet quam at ea suscipit sint consequatur,
+              obcaecati distinctio. Neque, nisi ratione tenetur quod vitae
+              reprehenderit sed!
+            </ion-card>
+            <ion-grid fixed>
+              <ion-row>
+                <ion-col size="4">
+                </ion-col>
+                <ion-col size="4"><ion-icon name="paper"></ion-icon>
+                  reports</ion-col>
+                <ion-col size="4">Nov 4, 18:06</ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="2">
+            <ion-avatar>
+              <img src="../../assets/icon/people 2.png">
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="10">
+            <ion-card [ngClass]="{messages_box:true}">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              numquam
+              explicabo a aliquam eveniet quam at ea suscipit sint consequatur,
+              obcaecati distinctio. Neque, nisi ratione tenetur quod vitae
+              reprehenderit sed!
+            </ion-card>
+            <ion-grid fixed>
+              <ion-row>
+                <ion-col size="4">
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon name="paper"></ion-icon>
+                  reports
+                </ion-col>
+                <ion-col size="4">Nov 4, 18:06</ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-item>
+        <ion-input [ngClass]="input" placeholder="Enter a comment.."></ion-input>
+        <ion-button [ngClass]="{btn_send:true}"><ion-icon
+            name="arrow-forward"></ion-icon></ion-button>
+      </ion-item>
+    </ion-card>
+  </ion-card>
+</ion-content>

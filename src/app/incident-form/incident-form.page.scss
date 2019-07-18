@@ -1,0 +1,84 @@
+.background_image {
+    width: 100% !important;
+    height: 15rem !important;
+   
+}
+
+.title {
+  --color:#000;
+  padding: 0;
+}
+
+.rang {
+  font-size: 2rem;
+      
+}
+.icons
+{
+  
+}
+.top_button{  
+    margin-top: 1rem;
+    color: #ffffff;
+    position: absolute;
+    top:-4;
+    margin-left: 0.3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: .4rem;
+    float: left;
+    text-align: center;
+     background-image: linear-gradient(
+    197deg,
+    rgba(255, 74, 47, 1) 0%,
+    rgba(255, 87, 82, 1) 33.33%,
+    rgba(252, 65, 103, 1) 100%
+  ) !important;
+}
+  
+.top_mask {
+  --background: rgba(0, 0, 0, 0.4);
+  top: -74px;
+    // border-radius: 1rem;
+  --color:#ffffff;
+  --padding-end: 0px;
+  --padding-start: 0px;
+    margin: 0;
+}
+
+.top_mask ion-avatar {
+  height: 3rem;
+  width: 3rem;
+}
+
+.bottom_mask{
+  top: -15px;
+  --background: #ffffff;
+  margin: 0;
+  // border-radius: 1rem
+  padding: .5rem;
+}
+
+.messages{
+  top: -3px;
+  margin: 0;
+  --background: #F1F2F6;
+}
+
+.messages_box{
+    --background: #ffff !important;
+    padding: 1rem;
+}
+
+
+
+.btn_send
+{
+    height: 2rem;
+  --background:rgba(118, 43, 216, 1) !important;
+  --border-radius:1rem; 
+}
+
+.back {
+  font-size: 2rem;
+}

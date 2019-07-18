@@ -75,3 +75,13 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+.custom-popover {
+  --background: rgba(0,0,0,.7) !important;
+}
+.custom-popover .content {
+   
+   --background: rgba(0,0,0,.7) !important;
+   padding: 2rem;
+}
+

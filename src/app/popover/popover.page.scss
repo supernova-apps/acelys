@@ -1,0 +1,27 @@
+.button {
+  
+}
+
+ion-icon{
+  width: 100%
+}
+.label
+{
+  widows: 100%;
+  text-align: center
+  
+}
+.content {
+  --background: rgba(0,0,0, 0.8);
+  --color:#fff;
+  --padding-bottom: 4rem;
+  --padding-end: 4rem;
+  --padding-start: 4rem;
+  --padding-top: 5rem;
+}
+
+.app-popover
+{
+  --background: transparent !important;
+  --box-shadow: none
+}
