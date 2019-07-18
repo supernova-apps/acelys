@@ -1,22 +1,21 @@
-.button{
-    
-   --color: #ffffff;
-    background: rgba(0,0,0,.7);
-    --background: rgba(0,0,0,.7);
-    border: 1px solid #fff;
-    display: inline-block;
-    border-radius: 3rem;
-    display: inline-block;
-}
-
-.label
-{
-   color: #ffffff;
-}
-
-.content {
-   --padding-bottom: 2rem;
-   --padding-top: 10rem;
+.container {
+   --padding-top: 8rem;
    --padding-start: 8rem;
    --padding-end: 8rem;
+   --background: rgba(0,0,0,.7) !important;
 }
+
+button {
+    display: inline-block;
+    border-radius: 50%;
+    line-height: .3;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFFFFF;
+    color: #fff;
+   // padding: .2rem;
+}
+button:focus { outline:0 !important; }
+
+// img {
+//    padding: 0.3rem;
+// }

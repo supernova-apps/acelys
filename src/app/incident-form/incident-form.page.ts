@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { ModalController } from '@ionic/angular';
+import { ModalPage } from '../modal/modal.page';
 
 @Component({
   selector: 'app-incident-form',
@@ -9,7 +11,7 @@ import { Location } from '@angular/common';
 })
 export class IncidentFormPage implements OnInit {
 
-  constructor(private router: Router, private location: Location) { }
+  constructor(public modalController: ModalController, private router: Router, private location: Location) { }
 
   ngOnInit() {
   }
@@ -23,5 +25,20 @@ export class IncidentFormPage implements OnInit {
 
   add() {
     this.router.navigateByUrl('/advertisement');
+  }
+
+  async open_modal(ev: any) {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      cssClass: 'custom-popover'
+    });
+    return await modal.present();
+    // const popover = await this.popoverController.create({
+    //   component: PopoverPage,
+    //   event: ev,
+    //   translucent: true,
+    //   cssClass: 'custom-popover'
+    // });
+    // return await popover.present();
   }
 }
