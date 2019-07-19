@@ -33,12 +33,5 @@ export class IncidentFormPage implements OnInit {
       cssClass: 'custom-popover'
     });
     return await modal.present();
-    // const popover = await this.popoverController.create({
-    //   component: PopoverPage,
-    //   event: ev,
-    //   translucent: true,
-    //   cssClass: 'custom-popover'
-    // });
-    // return await popover.present();
   }
 }

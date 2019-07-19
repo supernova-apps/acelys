@@ -1,35 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import { Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { ModalController } from "@ionic/angular";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-modal',
-  templateUrl: './modal.page.html',
-  styleUrls: ['./modal.page.scss'],
+  selector: "app-modal",
+  templateUrl: "./modal.page.html",
+  styleUrls: ["./modal.page.scss"]
 })
 export class ModalPage implements OnInit {
+  constructor(private modalCtrl: ModalController, private router: Router) {}
 
-  constructor(private modalCtrl: ModalController, private router: Router) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   edit() {
     this.modalCtrl.dismiss({
-      'dismissed': true
+      dismissed: true
     });
 
-    this.router.navigateByUrl('/advertisement');
+    this.router.navigateByUrl("/advertisement");
   }
-
-
 
   dismiss() {
-    // using the injected ModalController this page
-    // can "dismiss" itself and optionally pass back data
     this.modalCtrl.dismiss({
-      'dismissed': true
+      dismissed: true
     });
   }
-
 }
