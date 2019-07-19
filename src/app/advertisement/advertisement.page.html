@@ -26,28 +26,28 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="4">
-        <label>
-          Ad Type:
-        </label>
-      </ion-col>
-      <ion-col>
+      <ion-col size="12">
         <ion-radio-group>
           <ion-grid>
             <ion-row>
-              <ion-col>
+              <ion-col size="6">
+                <label>
+                  Ad Type:
+                </label>
+              </ion-col>
+              <ion-col size="3">
                 <ion-radio value="Offer">
                 </ion-radio>
-                <ion-label>
+                <label>
                   Offer
-                </ion-label>
+                </label>
               </ion-col>
-              <ion-col>
+              <ion-col size="3">
                 <ion-radio value="Request">
                 </ion-radio>
-                <ion-label>
+                <label>
                   Request
-                </ion-label>
+                </label>
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -55,9 +55,9 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-label>
+  <label>
     Category:
-  </ion-label>
+  </label>
   <ion-select placeholder="Select One">
     <ion-select-option value="f">
       Female
@@ -66,24 +66,24 @@
       Male
     </ion-select-option>
   </ion-select>
-  <ion-label>
+  <label>
     Title:
-  </ion-label>
+  </label>
   <ion-input>
   </ion-input>
-  <ion-label>
+  <label>
     Description:
-  </ion-label>
+  </label>
   <ion-textarea>
   </ion-textarea>
-  <ion-label>
+  <label>
     Price:
-  </ion-label>
+  </label>
   <ion-input>
   </ion-input>
-  <ion-label>
+  <label>
     Diffusion area:
-  </ion-label>
+  </label>
   <ion-select placeholder="Select One">
     <ion-select-option value="f">
       Female
@@ -92,29 +92,22 @@
       Male
     </ion-select-option>
   </ion-select>
-  <ion-label>
+  <label>
     Photos:
-  </ion-label>
+  </label>
   <!-- FOTOS SCROLL -->
   <ion-grid>
     <ion-row>
       <!-- COL FOTOS -->
       <ion-col size="9" [ngClass]="table_mode" scrollX="true">
+        <img [src]="image">
         <ion-slides [options]="slideOpts">
-          <ion-slide>
+          <ion-slide *ngFor="let img of images; index as pos"
+            [ngClass]="{photo:true}">
 
-            <img src="../../assets/1.jpg">
-
-          </ion-slide>
-          <ion-slide>
-
-            <img src="../../assets/2.jpg">
-
-          </ion-slide>
-          <ion-slide>
-
-            <img src="../../assets/3.jpg">
-
+            <ion-img [src]="img.path" [ngClass]="{img_data:true}"></ion-img>
+            <ion-icon [ngClass]="{delete:true}" name="close"
+              (click)="deleteImage(img, pos)"></ion-icon>
           </ion-slide>
         </ion-slides>
 
@@ -165,12 +158,12 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-thumbnail>
+              <ion-thumbnail (click)="selectImage(0)">
                 <img src="../../assets/icon/image.png">
               </ion-thumbnail>
             </ion-col>
             <ion-col>
-              <ion-thumbnail>
+              <ion-thumbnail (click)="selectImage(1)">
                 <img src="../../assets/icon/camera.png">
               </ion-thumbnail>
             </ion-col>
