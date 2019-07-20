@@ -5,11 +5,11 @@
   --background: rgba(0, 0, 0, 0.7) !important;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
   .container {
     --padding-top: 8rem;
-    --padding-start: 6rem;
-    --padding-end: 6rem;
+    --padding-start: 13rem;
+    --padding-end: 13rem;
     --background: rgba(0, 0, 0, 0.7) !important;
   }
 }
@@ -22,14 +22,51 @@
     --background: rgba(0, 0, 0, 0.7) !important;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .container {
     --padding-top: 8rem;
-    --padding-start: 13rem;
-    --padding-end: 13rem;
+    --padding-start: 9rem;
+    --padding-end: 9rem;
     --background: rgba(0, 0, 0, 0.7) !important;
   }
 }
+
+@media (max-width: 445px) {
+  .container {
+    --padding-top: 8rem;
+    --padding-start: 10rem;
+    --padding-end: 10rem;
+    --background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+@media (max-width: 411px) {
+  .container {
+    --padding-top: 8rem;
+    --padding-start: 8rem;
+    --padding-end: 8rem;
+    --background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    --padding-top: 8rem;
+    --padding-start: 7rem;
+    --padding-end: 7rem;
+    --background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    --padding-top: 8rem;
+    --padding-start: 6rem;
+    --padding-end: 6rem;
+    --background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
 button {
   display: inline-block;
   border-radius: 50%;
